@@ -1,9 +1,12 @@
+import { renderSocialLinks } from "./social.js";
+
 const $subscriptionForm = document.querySelector(".subcription-form");
 const $emailInput = document.getElementById("form-email");
 const $submitButton = document.getElementById("form-submit");
 const $errorMessage = document.getElementById("form-error");
 const $subscriptionDialog = document.querySelector(".subcription-dialog")
 
+renderSocialLinks();
 
 function validateEmail() {
   if (!$emailInput.validity.valid) {
