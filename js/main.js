@@ -1,59 +1,36 @@
-const $form = document.querySelector(".form");
-const $formEmail = document.getElementById("form-email");
-const $formSubmit = document.getElementById("form-submit");
-const $formError = document.getElementById("form-error");
+const $subscriptionForm = document.querySelector(".subcription-form");
+const $emailInput = document.getElementById("form-email");
+const $submitButton = document.getElementById("form-submit");
+const $errorMessage = document.getElementById("form-error");
+const $subscriptionDialog = document.querySelector(".subcription-dialog")
 
-function getUserEmail() {
-  return $formEmail.value.trim();
-}
 
-// validateField(field)
-function verifyEmail() {
-  /* const userEmail = getUserEmail();
-  if (userEmail === "") {
-    console.log("ingresa un valor")
-    return
-  } */
-  if ($formEmail.validity.valueMissing) {
-    console.log("Required field cannot be empty.");
-    return
-  }
-
-  //1.º
-  if (!$formEmail.validity.valid) {
-    console.log("mal")
-    $formError.textContent = `Please provide a valid email address`;
+function validateEmail() {
+  if (!$emailInput.validity.valid) {
+    $errorMessage.textContent = `Please provide a valid email address`;
     return false;
   }
 
-  console.log("bien")
-  $formError.textContent = "";
+  $errorMessage.textContent = "";
+  $submitButton.removeAttribute("disabled");
   return true;
-
-  /* if ($formEmail.validity.valid) {
-    console.log("bien")
-    console.log(userEmail)
-  } else {
-    console.log("mal")
-    $formError.classList.remove("visually-hidden");
-  } */
 }
 
 function resetForm() {
-  $form.reset();
+  $subscriptionForm.reset();
+  $submitButton.setAttribute("disabled", true);
 }
 
-$formEmail.addEventListener("blur", () => {
-  verifyEmail();
+$emailInput.addEventListener("input", () => {
+  validateEmail();
 })
 
-$form.addEventListener("submit", (e) => {
+$subscriptionForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const isValid = verifyEmail();
+  const isValid = validateEmail();
   if (isValid) {
-    console.log("submitting")
-  } else {
-    console.log("error")
+    $subscriptionDialog.showModal();
   }
-  resetForm()
+
+  resetForm();
 })

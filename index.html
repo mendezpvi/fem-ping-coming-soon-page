@@ -25,24 +25,32 @@
 
   <main class="main">
     <section class="intro">
-      <h2 class="intro__title">We are launching <span class="bold">soon!</span></h2>
-      <p class="intro__subtitle">Subscribe and get notified</p>
+      <h2 class="intro__heading">We are launching <span class="bold">soon!</span></h2>
+      <p class="intro__subheading">Subscribe and get notified</p>
     </section>
 
-    <form action="#" class="form" novalidate>
+    <form action="#" class="subcription-form" autocomplete="off" novalidate>
       <div class="form__group">
         <input type="email" name="email" id="form-email" class="form__input" placeholder="Your email address..."
-          pattern="^[a-z0-9.-_]+@[a-z0-9.-_]+\.[a-z]{2,}$" aria-label="Email address" aria-describedby="form-error"
+          pattern="^[a-z0-9._\-]+@[a-z0-9._\-]+\.[a-z]{2,}$" aria-label="Email address" aria-describedby="form-error"
           required>
         <span id="form-error" class="form__error" aria-live="polite"></span>
       </div>
       <button id="form-submit" class="form__button" type="submit" disabled>Notify Me</button>
     </form>
 
-    <div class="dashboard">
+    <dialog class="subcription-dialog" aria-labelledby="dialog-title">
+      <h2 id="dialog-title">Thanks for subscribing! 🎉</h2>
+      <p>We'll send you an email as soon as we launch.</p>
+      <form method="dialog">
+        <button type="submit" aria-label="Close this message" class="dialog__close" autofocus>&times;</button>
+      </form>
+    </dialog>
+
+    <figure class="dashboard">
       <img src="/assets/images/illustration-dashboard.png" alt="A dashboard showing user metrics."
         class="dashboard__image">
-    </div>
+    </figure>
   </main>
 
   <footer class="footer">
