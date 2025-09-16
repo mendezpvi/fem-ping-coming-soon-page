@@ -15,27 +15,28 @@
 
 <body>
   <header class="header">
-    <h1 class="header__logo">
+    <h1>
       <a href="/">
         <span class="visually-hidden">Ping.</span>
-        <img src="/assets/images/logo.svg" alt="Ping. The company logo." aria-hidden="true">
+        <img src="/assets/images/logo.svg" alt="Ping. The company logo." aria-hidden="true" class="header__logo">
       </a>
     </h1>
   </header>
 
   <main class="main">
     <section class="intro">
-      <h2 class="intro__title">We are launching soon!</h2>
+      <h2 class="intro__title">We are launching <span class="bold">soon!</span></h2>
       <p class="intro__subtitle">Subscribe and get notified</p>
     </section>
 
     <form action="#" class="form" novalidate>
       <div class="form__group">
         <input type="email" name="email" id="form-email" class="form__input" placeholder="Your email address..."
-          aria-label="Email address" aria-describedby="form-error" required>
-        <span id="form-error" class="form__error" aria-live="polite">Please provide a valid email address</span>
+          pattern="^[a-z0-9.-_]+@[a-z0-9.-_]+\.[a-z]{2,}$" aria-label="Email address" aria-describedby="form-error"
+          required>
+        <span id="form-error" class="form__error" aria-live="polite"></span>
       </div>
-      <button id="form-submit" class="form__button" type="submit">Notify Me</button>
+      <button id="form-submit" class="form__button" type="submit" disabled>Notify Me</button>
     </form>
 
     <div class="dashboard">
