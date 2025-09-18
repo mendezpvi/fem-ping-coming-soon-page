@@ -10,40 +10,42 @@
 
   <title>Frontend Mentor | Ping coming soon page</title>
 
+  <link rel="stylesheet" href="/css/font.css">
+  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body>
+<body class="grid">
   <header class="header">
     <h1>
-      <a href="/">
+      <a href="/" class="header__logo focus-outline">
         <span class="visually-hidden">Ping.</span>
-        <img src="/assets/images/logo.svg" alt="Ping. The company logo." aria-hidden="true" class="header__logo">
+        <img src="/assets/images/logo.svg" alt="Ping. The company logo." aria-hidden="true">
       </a>
     </h1>
   </header>
 
   <main class="main">
     <section class="intro">
-      <h2 class="intro__heading">We are launching <span class="bold">soon!</span></h2>
+      <h2 class="intro__heading">We are launching <span class="intro__highlight">soon!</span></h2>
       <p class="intro__subheading">Subscribe and get notified</p>
     </section>
 
-    <form action="#" class="subcription-form" autocomplete="off" novalidate>
-      <div class="form__group">
+    <form action="#" class="subscription-form flex" autocomplete="off" novalidate>
+      <div class="form__group grid">
         <input type="email" name="email" id="form-email" class="form__input" placeholder="Your email address..."
           pattern="^[a-z0-9._\-]+@[a-z0-9._\-]+\.[a-z]{2,}$" aria-label="Email address" aria-describedby="form-error"
           required>
         <span id="form-error" class="form__error" aria-live="polite"></span>
       </div>
-      <button id="form-submit" class="form__button" type="submit" disabled>Notify Me</button>
+      <button id="form-submit" class="form__button focus-outline" type="submit" disabled>Notify Me</button>
     </form>
 
-    <dialog class="subcription-dialog" aria-labelledby="dialog-title">
+    <dialog class="subscription-dialog" aria-labelledby="dialog-title">
       <h2 id="dialog-title">Thanks for subscribing! 🎉</h2>
       <p>We'll send you an email as soon as we launch.</p>
       <form method="dialog">
-        <button type="submit" aria-label="Close this message" class="dialog__close" autofocus>&times;</button>
+        <button type="submit" aria-label="Close this message" class="dialog__close focus-outline" autofocus>Close</button>
       </form>
     </dialog>
 
@@ -54,14 +56,14 @@
   </main>
 
   <footer class="footer">
-    <ul class="social-list"></ul>
+    <ul class="social-list flex"></ul>
 
     <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
 
     <p class="attribution">Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank"
-        rel="noopener noreferrer" class="attribution__link">Frontend Mentor</a> - Coded by <a
+        rel="noopener noreferrer" class="attribution__link focus-outline">Frontend Mentor</a> - Coded by <a
         href="https://github.com/mendezpvi/fem-ping-coming-soon-page" target="_blank" rel="noopener noreferrer"
-        class="attribution__link">VIMP</a>
+        class="attribution__link focus-outline">VIMP</a>
     </p>
   </footer>
 

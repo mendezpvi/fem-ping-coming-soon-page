@@ -28,7 +28,7 @@ export function renderSocialLinks() {
     socialLink.setAttribute("rel", "noopener noreferrer");
     socialLink.setAttribute("title", name);
     socialLink.setAttribute("aria-label", `Visit us on ${name}`);
-    socialLink.classList.add("social__link");
+    socialLink.classList.add("social__link", "grid", "focus-outline");
 
     socialLink.innerHTML = icons[name];
 

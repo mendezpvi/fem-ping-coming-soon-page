@@ -1,10 +1,10 @@
 import { renderSocialLinks } from "./social.js";
 
-const $subscriptionForm = document.querySelector(".subcription-form");
+const $subscriptionForm = document.querySelector(".subscription-form");
 const $emailInput = document.getElementById("form-email");
 const $submitButton = document.getElementById("form-submit");
 const $errorMessage = document.getElementById("form-error");
-const $subscriptionDialog = document.querySelector(".subcription-dialog")
+const $subscriptionDialog = document.querySelector(".subscription-dialog")
 
 renderSocialLinks();
 
