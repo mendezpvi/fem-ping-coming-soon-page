@@ -5,7 +5,7 @@
 This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
-## Table of contents
+**Table of contents**
 
 - [The challenge](#the-challenge-)
 - [Screenshots](#screenshots-)
@@ -15,7 +15,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - [Author](#author-)
 
 
-### The challenge 📌
+## The challenge 📌
 
 Users should be able to:
 
@@ -28,20 +28,19 @@ Users should be able to:
 	- The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Please provide a valid email address"*
 
 
-### Screenshots 📸
+## Screenshots 📸
 
 ![](./assets/screenshots/mobile.avif)
 
 ![](./assets/screenshots/desktop.avif)
 
 
-### Links 🔗
+## Links 🔗
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[Live site URL here](https://mendezpvi.github.io/fem-ping-coming-soon-page/) ↗️
 
 
-### Built with 🛠️
+## Built with 🛠️
 
 ✅ Semantic **HTML5 markup**
 
@@ -58,7 +57,7 @@ Users should be able to:
 ✅ **Dynamic rendering** of social icons with JavaScript
 
 
-### Useful resources 🌎
+## Useful resources 🌎
 
 📺 [Minor CSS tweaks to improve forms](https://youtu.be/awNYtIAu6pI?si=1DEc8OT_YG55GhY_) - by @KevinPowell
 
@@ -66,4 +65,4 @@ Users should be able to:
 
 ## Author 🔰
 
-✨ Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+✨ Frontend Mentor - [@mendezpvi](https://www.frontendmentor.io/profile/mendezpvi)
